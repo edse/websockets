@@ -1,5 +1,5 @@
 <?php
-namespace WebSocket;
+//namespace WebSocket;
 
 /**
  * WebSocket Connection class

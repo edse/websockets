@@ -13,7 +13,7 @@ require(__DIR__ . '/lib/SplClassLoader.php');
 $classLoader = new SplClassLoader('WebSocket', __DIR__ . '/lib');
 $classLoader->register();
 
-$server = new \WebSocket\Server('websockets.possum-cms.com', 8002, false);
+$server = new Server('websockets.possum-cms.com', 8002, false);
 
 // server settings:
 $server->setMaxClients(100);
@@ -23,7 +23,7 @@ $server->setMaxConnectionsPerIp(100);
 $server->setMaxRequestsPerMinute(2000);
 
 // Hint: Status application should not be removed as it displays usefull server informations:
-$server->registerApplication('status', \WebSocket\Application\StatusApplication::getInstance());
-$server->registerApplication('demo', \WebSocket\Application\DemoApplication::getInstance());
+$server->registerApplication('status', StatusApplication::getInstance());
+$server->registerApplication('demo', DemoApplication::getInstance());
 
 $server->run();

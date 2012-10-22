@@ -1,6 +1,6 @@
 <?php
 
-namespace WebSocket\Application;
+//namespace WebSocket\Application;
 
 /**
  * WebSocket Server Application
