@@ -8,9 +8,9 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require('./lib/SplClassLoader.php');
+require(dirname(__FILE__) . '/lib/SplClassLoader.php');
 
-$classLoader = new SplClassLoader('WebSocket', './lib');
+$classLoader = new SplClassLoader('WebSocket', dirname(__FILE__) . '/lib');
 $classLoader->register();
 
 $server = new Server('websockets.possum-cms.com', 8002, false);
