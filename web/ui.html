@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .description{
+        max-height: 43px;
+        height: 43px;
+        overflow-y: hidden;
+      }
+      .logo{
+        width: 130px;
+      }
+      .display{
+        padding-right:9px;
+        width: 310px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#inicio">Segunda Tela</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#inicio">Início</a></li>
+              <li><a href="#guia">Guia de TV</a></li>
+              <li><a href="#trends">Mais Falados</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div id="inicio"></div>
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Segunda Tela</h1>
+        <p>Este é um aplicativo de iteratividade em tempo real com o conteúdo dos canais abertos da televisão brasileira.</p>
+        <p><a class="btn btn-primary btn-large">Mais informações &raquo;</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div id="guia"></div>
+      <div class="page-header">
+        <h1>Guia de TV</h1>
+      </div>
+
+      <h3>TV Cultura</h3>
+      <div class="row">
+        <div class="span2">
+          <img class="logo" src="img/logo-cultura2.png" alt="TV Cultura" />
+        </div>
+        <div id="tvcultura" class="carousel slide span10">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/displays/78f43558efc426c02b2ee8488fd2d1a66c827079.jpg" alt="Kamchatka" />
+                <div class="caption">
+                  <h3>Planeta Terra</h3>
+                  <p class="description">Kamchatka - Hoje viajaremos ao nosso primeiro destino dentro da vasta Rússia. Estamos falando de uma península situada bem ao oriente do país, chamada Kamchatka. Este primeiro episódio de "Rússia Selvagem" nos leva a um local de vulcões furiosos, de lagos dentro de vulcões e olha mais de perto para algumas espécies animais que insistem em morar nessa terra de extremos, como a águia de stellar.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/displays/6aaf48a72afbfd16daaa4d86479d0add563e8858.jpg" alt="Vladimir Herzog" />
+                <div class="caption">
+                  <h3>Matéria de Capa</h3>
+                  <p class="description">Vladimir Herzog - Neste domingo, o tema será a correção histórica do atestado de óbito de Vladimir Herzog. Na semana em que a morte do jornalista completa 37 anos, o programa destaca a importância da mudança na causa da morte registrada, da versão inicial de suicídio para a real, que agora passa a ser também a oficial, de lesões e maus tratos. </p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/programs/d3dcddee460a42d0cd8048609c7f989417a76a46.jpg" alt="TV Folha" />
+                <div class="caption">
+                  <h3>TV Folha</h3>
+                  <p class="description">A Folha de S. Paulo estreia um programa jornalístico na TV Cultura. O programa jornalístico, novidade da programação 2012, vai ao ar todos os domingos, com duração de 30 minutos.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left pull-left" href="#tvcultura" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right pull-right" href="#tvcultura" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+
+      <hr />
+      <h3>TV RáTimBum!</h3>
+      <div class="row">
+        <div class="span2">
+          <img class="logo" src="img/logo-tvratimbum.png" alt="TV RáTimBum!" />
+        </div>
+        <div id="tvratimbum" class="carousel slide span10">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/programs/5088ffea7b06210566fe3647d450e98a1294bb20.jpg" alt="Mistureba" />
+                <div class="caption">
+                  <h3>Mistureba</h3>
+                  <p class="description">Junte muita diversão com bastante imaginação, uma pitada de mistério, acrescente brincadeiras, curiosidades e uma porção de aventura. O resultado é uma irresistível “Mistureba”.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/programs/ba299d922023aaeefddbe1fefd3aa9f916e2c637.jpg" alt="Hora de história I" />
+                <div class="caption">
+                  <h3>Hora de história I</h3>
+                  <p class="description">Toda a garotada vai parar na frente da TV para assistir, brincar, aprender e conhecer as mais divertidas e encantadoras histórias deste e de outros mundos.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/programs/41319f81d64922d4b39f6f926700feb16e819457.jpg" alt="É hora, é hora, é hora, Rá Tim Bum! IV" />
+                <div class="caption">
+                  <h3>É hora, é hora, é hora, Rá Tim Bum! IV</h3>
+                  <p class="description">Chega de saudade! Os programas que participaram da infância de muitas gerações como os clássicos Rá Tim Bum, Mundo da Lua e X-Tudo.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left pull-left" href="#tvratimbum" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right pull-right" href="#tvratimbum" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+
+      <hr />
+      <h3>multiCULTURA</h3>
+      <div class="row">
+        <div class="span2">
+          <img class="logo" src="img/logo-multicultura.png" alt="multiCULTURA" />
+        </div>
+        <div id="multicultura" class="carousel slide span10">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/displays/a122365cf964d43536f9211a49de6095d6e47cc4.jpg" alt="Negra Li" />
+                <div class="caption">
+                  <h3>Ensaio</h3>
+                  <p class="description">Neste programa Fernando Faro recebe a cantora Negra Li. Ela fala das músicas que ouvia quando criança e que cantava na Igreja. O início da sua carreira foi em 1996 em um grupo de Rap e logo depois passou a fazer parte de RZO (Rapaziada Zona Oeste). Li fala da regravação da música de Marisa Monte, das influências de Tim Maia, Cassiano e Sandra de Sá, além da música black americana.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/displays/1df29a2268b889cd4415013499a22135329e5b2c.jpg" alt="Homem sensível ou macho jurubeba?" />
+                <div class="caption">
+                  <h3>Café Filosófico</h3>
+                  <p class="description">Toda a garotada vai parar na frente da TV para assistir, brincar, aprender e conhecer as mais divertidas e encantadoras histórias deste e de outros mundos.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/displays/b0459883321bc5aae2aa5804b3b7f09e9b7dcfa6.jpg" alt="Emerson String Quartet" />
+                <div class="caption">
+                  <h3>Clássicos</h3>
+                  <p class="description">Uma das formações mais sofisticadas da música clássica com alguns dos mais importantes intérpretes da atualidade é o que você vai acompanhar no programa Clássicos que traz o Emerson String Quartet.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left pull-left" href="#multicultura" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right pull-right" href="#multicultura" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+
+      <hr />
+      <h3>UnivespTV</h3>
+      <div class="row">
+        <div class="span2">
+          <img class="logo" src="img/logo-univesptv.png" alt="UnivespTV" />
+        </div>
+        <div id="univesptv" class="carousel slide span10">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/programs/14fff87b21edf4460323c85c39f7e97143b63676.jpg" alt="Notícias Univesp" />
+                <div class="caption">
+                  <h3>Notícias Univesp</h3>
+                  <p class="description">Acompanhamento jornalístico de temas relacionados à educação, ensino superior e vida universitária. Reportagens, entrevistas e discussões conduzidas pelo apresentador Éderson Granetto.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/programs/a33d89618e86d4eb2ceca287747774e96af0f4ce.jpg" alt="Vulcões" />
+                <div class="caption">
+                  <h3>Ensino de Ciências: Métodos e Técnicas</h3>
+                  <p class="description">Programas relacionados às disciplinas do Curso de Pedagogia Unesp-Univesp</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <img class="display pull-left" src="http://midia.cmais.com.br/programs/7125a083330848e61daae64ee324235ad77c3c51.jpg" alt="You and I - Lady Gaga" />
+                <div class="caption">
+                  <h3>Inglês com Música</h3>
+                  <p class="description">O programa é uma forma dinâmica de ensinar a língua inglesa através das letras das músicas. O objetivo é ensinar inglês de forma envolvente e divertida através de jogos e letras de canções.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left pull-left" href="#univesptv" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right pull-right" href="#univesptv" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+
+      <hr />
+      <h3>Rádio CulturaBrasil</h3>
+      <div class="row">
+        <div class="span2">
+          <img class="logo" src="img/logo-culturabrasil.gif" alt="CulturaBrasil" />
+        </div>
+        <div id="culturabrasil" class="carousel slide span10">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="thumbnail" style="height: 186px;">
+                <div class="caption">
+                  <h3>Cultura Livre</h3>
+                  <p class="description">O programa apresenta a música brasileira que acontece hoje.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <div class="caption">
+                  <h3>RadarCultura</h3>
+                  <p class="description">No RadarCultura, a programação é sua! Consulte nosso acervo, encontre suas músicas favoritas e vote!</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <div class="caption">
+                  <h3>Seleção do Ouvinte</h3>
+                  <p class="description">O ouvinte é o programador musical. Vinte músicas brasileiras indicadas pelo ouvinte.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left pull-left" href="#culturabrasil" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right pull-right" href="#culturabrasil" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+
+      <hr />
+      <h3>Rádio Cultura FM</h3>
+      <div class="row">
+        <div class="span2">
+          <img class="logo" src="img/logo-culturafm.png" alt="Rádio Cultura FM" />
+        </div>
+        <div id="culturafm" class="carousel slide span10">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="thumbnail" style="height: 186px;">
+                <div class="caption">
+                  <h3>Cultura Jazz</h3>
+                  <p class="description">Programação de duas horas dedicada às várias tendências do jazz.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <div class="caption">
+                  <h3>Começando o Dia</h3>
+                  <p class="description">A Rádio Cultura FM (103,3 mhz) inaugura um novo jornalístico matutino. Trata-se do Começando o dia, um programa que mistura música clássica com notícias de política, economia, cultura, sustentabilidade e comportamento.</p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail" style="height: 186px;">
+                <div class="caption">
+                  <h3>Concertos do Meio-Dia</h3>
+                  <p class="description">Programa musical com concertos e obras sinfônicas. </p>
+                  <p>2:00pm – 3:00pm PDT — Monday 22 October</p>
+                  <p><a class="btn btn-small pull-right" href="#">Detalhes &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left pull-left" href="#culturafm" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right pull-right" href="#culturafm" data-slide="next">&rsaquo;</a>
+        </div>
+      </div>
+
+      <div id="trends"></div>
+      <hr />
+      <h1>Mais Falados</h1>
+      <div class="row">
+        <div class="span3">
+          <h2>TV Cultura</h2>
+          <p>Roda Viva entrevista Lucélia Santos</p>
+          <h5>CH2 22:00 – 11:30 GMT-3</h5>
+          <p><a class="btn" href="#">Ver detalhes &raquo;</a></p>
+        </div>
+        <div class="span3">
+          <h2>TV Cultura</h2>
+          <p>Roda Viva entrevista Lucélia Santos</p>
+          <h5>CH2 22:00 – 11:30 GMT-3</h5>
+          <p><a class="btn" href="#">Ver detalhes &raquo;</a></p>
+       </div>
+       <div class="span3">
+          <h2>TV Cultura</h2>
+          <p>Roda Viva entrevista Lucélia Santos</p>
+          <h5>CH2 22:00 – 11:30 GMT-3</h5>
+          <p><a class="btn" href="#">Ver detalhes &raquo;</a></p>
+       </div>
+       <div class="span3">
+          <h2>TV Cultura</h2>
+          <p>Roda Viva entrevista Lucélia Santos</p>
+          <h5>CH2 22:00 – 11:30 GMT-3</h5>
+          <p><a class="btn" href="#">Ver detalhes &raquo;</a></p>
+       </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/libs/jquery-1.7.2.min.js"></script>
+    <script src="js/libs/jquery.gritter.min.js"></script>
+
+    <script src="js/libs/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

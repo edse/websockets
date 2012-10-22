@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>jQuery Mobile Docs - Buttons</title> 
+  <link rel="stylesheet"  href="demos/css/themes/default/jquery.mobile-1.2.0.css" />  
+  <link rel="stylesheet" href="demos/docs/_assets/css/jqm-docs.css"/>
+
+  <script src="demos/js/jquery.js"></script>
+  <script src="demos/docs/_assets/js/jqm-docs.js"></script>
+  <script src="demos/js/jquery.mobile-1.2.0.js"></script>
+
+  <script src="json2.js"></script>
+  <script src="client.js"></script>
+
+</head> 
+<body> 
+
+  <div data-role="page" class="type-interior">
+
+    <div data-role="header" data-theme="d">
+    <h1>Segunda Tela - Second Screen</h1>
+    <a href="demos/" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+    <a href="javascript:;" data-rel="dialog" data-transition="fade" data-theme="f"><span id="status" class="offline">offline</span></a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <div class="content-primary">
+      <h2>Second Screen Experience</h2>
+      <p>This app is connected to our server through websockets.</p>
+      <p>Every new iteractivity will pop for all users at the same time.</p> 
+
+
+      <h1>Shiny WSS Demo Application</h1>
+    
+      <h2>Send Text Frame</h2>
+      <input id="action" placeholder="action" type="text" />
+      <input id="data" placeholder="data" type="text" />
+      <button id="send">Send Text</button>
+      
+      <h2>Send Binary Frame</h2>
+      <form name="binaryFrame" action="#">
+        <input type="file" name="file" id="file">
+        <button id="sendfile">Send Binary</button>
+      </form>
+      
+      <h2>Server-Response</h2>
+      <div id="log"></div>
+  
+    </div>
+    <!--/content-primary -->
+
+        <div class="content-secondary">
+
+          <div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
+
+              <h3>In this section</h3>
+
+              <ul data-role="listview">
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-bb.jpg" />
+                  <h3>Broken Bells</h3>
+                  <p>Broken Bells</p>
+                </a></li>
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-hc.jpg" />
+                  <h3>Warning</h3>
+                  <p>Hot Chip</p>
+                </a></li>
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-p.jpg" />
+                  <h3>Wolfgang Amadeus Phoenix</h3>
+                  <p>Phoenix</p>
+                </a></li>
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-ok.jpg" />
+                  <h3>Of The Blue Colour Of The Sky</h3>
+                  <p>Ok Go</p>
+                </a></li>
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-ws.jpg" />
+                  <h3>Elephant</h3>
+                  <p>The White Stripes</p>
+                </a></li>
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-rh.jpg" />
+                  <h3>Kid A</h3>
+                  <p>Radiohead</p>
+                </a></li>
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-xx.jpg" />
+                  <h3>XX</h3>
+                  <p>XX</p>
+                </a></li>
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-mg.jpg" />
+                  <h3>Congratulations</h3>
+                  <p>MGMT</p>
+                </a></li>
+                
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-ag.jpg" />
+                  <h3>Ashes Grammar</h3>
+                  <p>A Sunny Day in Glasgow</p>
+                </a></li>
+                
+                <li><a href="index.html">
+                  <img src="demos/docs/lists/images/album-k.jpg" />
+                  <h3>Hot Fuss</h3>
+                  <p>Killers</p>
+                </a></li>
+                <li><a href="index.html"> 
+                  <img src="demos/docs/lists/images/album-af.jpg" />
+                  <h3>The Suburbs</h3>
+                  <p>Arcade Fire</p>
+                </a></li>
+              </ul>
+
+              <ul data-role="listview" data-theme="c" data-dividertheme="d">
+                <li data-role="list-divider">Ajuda</li>
+                <li><a href="buttons-icons.html">Sobre este aplicativo</a></li>
+                <li><a href="mailto:emerson.estrella@gmail.com">Contato</a></li>
+              </ul>
+          </div>
+        </div>
+
+      </div><!-- /content -->
+
+      <div data-role="footer" class="footer-docs" data-theme="c">
+        <p>&copy; 2012 <a href="mailto:emerson.estrella@gmail.com">Emerson Estrella</a></p>
+        <p style="float: right">Second Screen Experience - V1.0</p>
+      </div>
+
+      </div><!-- /page -->
+
+</body>
+</html>
