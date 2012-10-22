@@ -4,7 +4,7 @@
     log = function(msg) {
       return $('#log').append("" + msg + "<br />");
     };
-    serverUrl = 'ws://websockets:8002/demo';
+    serverUrl = 'ws://websockets.possum-cms.com:8002/demo';
     if (window.MozWebSocket) {
       socket = new MozWebSocket(serverUrl);
     } else if (window.WebSocket) {

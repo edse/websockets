@@ -18,6 +18,6 @@ if(isset($_REQUEST["payload"])){
   $msg2 = exec('cd '.dirname(__FILE__).'..');
   $msg2 .= "\n\n".exec('git pull');
   
-  mail('emerson.estrella@gmail.com', 'Git Pulled [VideoPuzzle]', $msg.$msg2);
+  mail('emerson.estrella@gmail.com', 'Git Pulled [Websockets]', $msg.$msg2);
 
 }
