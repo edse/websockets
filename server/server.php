@@ -11,6 +11,8 @@ error_reporting(E_ALL);
 require(dirname(__FILE__) . '/lib/SplClassLoader.php');
 
 require(dirname(__FILE__) . '/lib/WebSocket/Server.php');
+require(dirname(__FILE__) . '/lib/WebSocket/Socket.php');
+require(dirname(__FILE__) . '/lib/WebSocket/Connection.php');
 
 //$classLoader = new SplClassLoader('WebSocket', dirname(__FILE__) . '/lib');
 //$classLoader->register();
