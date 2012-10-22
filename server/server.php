@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 require('./lib/SplClassLoader.php');
 
-$classLoader = new SplClassLoader('WebSocket', __DIR__ . '/lib');
+$classLoader = new SplClassLoader('WebSocket', './lib');
 $classLoader->register();
 
 $server = new Server('websockets.possum-cms.com', 8002, false);
