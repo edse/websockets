@@ -20,7 +20,8 @@ abstract class Application
     
     final public static function getInstance()
     {
-        $calledClassName = get_called_class();
+        //$calledClassName = get_called_class();
+        $calledClassName = get_parent_class();
         if (!isset(self::$instances[$calledClassName])) {
             self::$instances[$calledClassName] = new $calledClassName();
         }
