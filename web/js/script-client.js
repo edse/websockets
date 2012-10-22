@@ -14,7 +14,7 @@ function send( text ) {
 
 $(document).ready(function() {
   log('Connecting...');
-  Server = new FancyWebSocket('ws://possum-cms.com:19329');
+  Server = new FancyWebSocket('ws://187.45.195.14:19330');
 
   $('#message').keypress(function(e) {
     if ( e.keyCode == 13 && this.value ) {
