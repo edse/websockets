@@ -3,7 +3,7 @@ var Server;
 function log( text ) {
   $log = $('#log');
   //Add text to log
-  $log.append(($log.val()?"\n":'')+text);
+  $log.append(($log.val()?"<br />":'<br />')+text);
   //Autoscroll
   $log[0].scrollTop = $log[0].scrollHeight - $log[0].clientHeight;
 }
@@ -14,7 +14,7 @@ function send( text ) {
 
 $(document).ready(function() {
   log('Connecting...');
-  Server = new FancyWebSocket('ws://websockets:19325');
+  Server = new FancyWebSocket('ws://websockets.possum-cms.com:19328');
 
   $('#message').keypress(function(e) {
     if ( e.keyCode == 13 && this.value ) {
@@ -27,12 +27,18 @@ $(document).ready(function() {
 
   //Let the user know we're connected
   Server.bind('open', function() {
-    log( "Connected." );
+    log("Connected.");
+    $("#status").html("Connected")
+    $("#status").removeClass("label-important");
+    $("#status").addClass("label-success");
   });
 
   //OH NOES! Disconnection occurred.
   Server.bind('close', function( data ) {
-    log( "Disconnected." );
+    log("Disconnected.");
+    $("#status").html("Disconnected")
+    $("#status").removeClass("label-success");
+    $("#status").addClass("label-important");
   });
 
   //Log any messages sent from server
