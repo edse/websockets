@@ -10,8 +10,10 @@ error_reporting(E_ALL);
 
 require(dirname(__FILE__) . '/lib/SplClassLoader.php');
 
-$classLoader = new SplClassLoader('WebSocket', dirname(__FILE__) . '/lib');
-$classLoader->register();
+require(dirname(__FILE__) . '/lib/WebSocket/Server.php');
+
+//$classLoader = new SplClassLoader('WebSocket', dirname(__FILE__) . '/lib');
+//$classLoader->register();
 
 $server = new Server('websockets.possum-cms.com', 8002, false);
 
