@@ -8,7 +8,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require(__DIR__ . '/lib/SplClassLoader.php');
+require('./lib/SplClassLoader.php');
 
 $classLoader = new SplClassLoader('WebSocket', __DIR__ . '/lib');
 $classLoader->register();
