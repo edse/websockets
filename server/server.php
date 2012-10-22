@@ -11,7 +11,8 @@ error_reporting(E_ALL);
 require(dirname(__FILE__) . '/lib/SplClassLoader.php');
 
 require(dirname(__FILE__) . '/lib/WebSocket/Application/Application.php');
-//require(dirname(__FILE__) . '/lib/WebSocket/Application/Application.php');
+require(dirname(__FILE__) . '/lib/WebSocket/Application/StatusApplication.php');
+require(dirname(__FILE__) . '/lib/WebSocket/Application/DemoApplication.php');
 
 require(dirname(__FILE__) . '/lib/WebSocket/Socket.php');
 require(dirname(__FILE__) . '/lib/WebSocket/Connection.php');
